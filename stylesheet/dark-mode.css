@@ -1,0 +1,183 @@
+:root:has(.mode:checked){
+    --main-color:#fff;
+    --secondry-color:#fff;
+    --tertiary-color:#9f9f9f;
+    --background-color:#252525;
+    --background-dark-color:#C17E1F;
+    --background-color-selection:#C17E1F;
+}
+
+:has(.mode:checked) body::selection{
+    background-color: var(--background-dark-color);
+    color: var(--secondry-color);
+}
+
+:has(.mode:checked) nav .container .nav-icon{
+    display: flex;
+}
+
+:has(.mode:checked) nav .container .nav-icon label i[class="fa-regular fa-sun"]{
+    display: flex;
+}
+
+:has(.mode:checked) nav .container .nav-icon label i[class="fa-solid fa-moon"]{
+    display: none;
+}
+
+:has(.mode:checked) nav{
+    background-color: #171717;
+}
+
+:has(.mode:checked) nav .container .nav-items ul li a:hover{
+    color:var(--tertiary-color);
+}
+
+:has(.mode:checked):has(#home:target) nav .container .nav-items ul li a[href="#home"],
+:has(.mode:checked):has(#chefs:target) nav .container .nav-items ul li a[href="#chefs"],
+:has(.mode:checked):has(#gallery:target) nav .container .nav-items ul li a[href="#gallery"],
+:has(.mode:checked):has(#contact:target) nav .container .nav-items ul li a[href="#contact"]{
+    color:var(--tertiary-color);
+}
+
+:has(.mode:checked) nav .container .nav-logo a::after{
+    color:var(--background-dark-color);
+}
+
+:has(.mode:checked) nav .container .nav-items ul li a::before{
+    background-color:var(--background-dark-color);
+}
+
+:has(.mode:checked) #home .container .header-left .header-btn > a:first-child{
+    background-color:var(--background-dark-color);
+}
+
+:has(.mode:checked) #home .container .header-left .header-btn .header-btn-youtube a .video-btn{
+    background-image: linear-gradient(to right, var(--background-dark-color) 0 50%, transparent 50% 100%);
+}
+
+:has(.mode:checked) #home .container .header-left .header-btn .header-btn-youtube a .video-btn i{
+    color:#FFFFFF;
+}
+
+:has(.mode:checked) #home .container .header-left .header-btn .header-btn-youtube a .video-btn::before{
+    background-color:#171717
+}
+
+:has(.mode:checked) #chefs{
+    background-color:#202020;
+}
+
+:has(.mode:checked) #chefs .container .chefs-content p{
+    color: var(--main-color);
+}
+
+:has(.mode:checked) #chefs .container .chefs-content p span{
+    color: var(--background-dark-color);
+}
+
+:has(.mode:checked) #chefs .container .chefs-cards .card{
+    color: var(--main-color);
+    background-color: #171717;
+}
+
+:has(.mode:checked) #chefs .container .chefs-cards .card picture svg{
+    background-image: url("../images/team-shape-dark.svg");
+}
+
+:has(.mode:checked) #gallery .container .gallery-content p{
+    color: var(--main-color);
+}
+
+:has(.mode:checked) #gallery .container .gallery-content p span{
+    color: var(--background-dark-color);
+}
+
+:has(.mode:checked) #contact{
+    background-color: #202020;
+}
+
+:has(.mode:checked) #contact .container .contact-tittle p{
+    color: var(--main-color);
+}
+
+:has(.mode:checked) #contact .container .contact-tittle p span{
+    color: var(--background-dark-color);
+}
+
+:has(.mode:checked) #contact .container .contact-content .contact-details .address .address-details p, #contact .container .contact-content .contact-details .opening-hours .opening-hours-details p{
+    color: var(--main-color);
+}
+
+:has(.mode:checked) #contact .container .contact-content .contact-details .email .email-details a, #contact .container .contact-content .contact-details .call .call-details a{
+    color: var(--main-color);
+}
+
+:has(.mode:checked) #contact .container .contact-content form{
+    background-color: #171717;
+}
+
+
+:has(.mode:checked) #contact .container .contact-content button:hover{
+    background-color: var(--background-dark-color);
+}
+
+
+:has(.mode:checked) #contact .container .contact-content .contact-details .address .address-icon{
+    background-color: var(--background-dark-color);
+}
+
+:has(.mode:checked) #contact .container .contact-content .contact-details .email .email-icon{
+    background-color: var(--background-dark-color);
+}
+
+:has(.mode:checked) #contact .container .contact-content .contact-details .call .call-icon{
+    background-color: var(--background-dark-color);
+}
+
+:has(.mode:checked) #contact .container .contact-content .contact-details .opening-hours .opening-hours-icon{
+    background-color: var(--background-dark-color);
+}
+
+:has(.mode:checked) #contact .container .contact-content .contact-details .address{
+    background-color: #0D0D0D;
+}
+
+:has(.mode:checked) #contact .container .contact-content .contact-details .email{
+    background-color: #0D0D0D;
+}
+
+:has(.mode:checked) #contact .container .contact-content .contact-details .call{
+    background-color: #0D0D0D;
+}
+
+:has(.mode:checked) #contact .container .contact-content .contact-details .opening-hours{
+    background-color: #0D0D0D;
+}
+
+:has(.mode:checked) #contact .container .contact-content button{
+    background-color: var(--background-dark-color);
+}
+
+:has(.mode:checked) footer .container .footer-subscribe .subscribe-form button{
+    background-color: var(--background-dark-color);
+}
+
+:has(.mode:checked) footer .container .footer-contact ul li i{
+    color: var(--background-dark-color);
+}
+
+:has(.mode:checked) footer .container .footer-about > div h1::after{
+    color: var(--background-dark-color);
+}
+
+:has(.mode:checked) #home .container .header-left .header-btn .header-btn-youtube a:hover{
+    color: var(--background-dark-color);
+}
+
+:has(.mode:checked) nav .container .list-items ul li a::before{
+    background-color: var(--background-dark-color);
+}
+
+:has(.mode:checked) nav .container .nav-icon i[class="fa-solid fa-bars"]{
+    color: var(--main-color);
+}
